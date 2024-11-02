@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php">
+        <Label for="login">Login <input type="text" id="login" name="Login" placeholder="Digite seu login" required> <b>* <br>
+        <Label for="senha">senha <input type="password" id="senha" name="Senha" placeholder="Digite sua senha" required> <b>*<br>
+        datatime <input type="datetime-local" id="data" name="Data" placeholder="Digite a data de nasc"> <br>
+        <input type="hidden" name="vai" value="ja foi">
+            <h2>selecione uma ou mais linguagens </h2>
+            <input type="checkbox" name="js" id="js"checked><Label for="js">JS <br>
+            <input type="checkbox" name="php" id="php"> <Label for="php">PHP<br>
+            <input type="checkbox" name="sql"id="sql"> <Label for="sql">SQL<br>
+            <h2> Qual dia da semana da aula de HTML/CSS></h2>
+
+            <input type="radio" name="dia da semana" value="segunda" id="segunda"required ><Label for="segunda">segunda</Label><br>
+            <input type="radio" name="dia da semana" value="terça" id="terça"><Label for="terça">terça</Label><br>
+            <input type="radio" name="dia da semana" value="quarta" id="quarta"><Label for="quarta">quarta</Label><br>
+            <input type="radio" name="dia da semana" value="quinta" id="quinta"><Label for="quinta">quinta</Label><br>
+            <input type="radio" name="dia da semana" value="sexta" id="sexta"><Label for="sexta">sexta</Label><br>
+
+            selecione UF<select name="uf">
+                <option value="RJ">Rio de Janeiro</option>
+                <option>MG</option>
+                <option selected>SP</option>
+                <option>ES</option>
+                </select><br>
+
+                mensagem <textarea name="msg" rows="10" cols="40" placeholder="Digite sua mensagem"></textarea><br>
+
+<!-- o campo radio para funcionar todos os nome tem que ser iguais -->
+<!-- value tem que ser diferentes -->
+ <!-- checked o campo fica selecionado automaticamente -->
+         <input type="submit" value="Enviar!"><input typr="reset" value="Limpar Dados!">
+
+    </form><br>
+    <p> * -Campo obrigatorio</p>
+   
+</body>
+</html>
